@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun StateSample1() {
-    var text = remember { mutableStateOf("") }
+    val text = remember { mutableStateOf("") }
     Column (
         modifier = Modifier
             .fillMaxSize()
