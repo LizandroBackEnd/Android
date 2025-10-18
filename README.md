@@ -14,5 +14,11 @@
 
 # 🎨 Vista previa 
 
-## 1. States 
-![States](./assets/states.jpg)
+## <a href="#states">1. States</a>
+
+<details id="states">
+  <summary>Haz clic para ver la imagen</summary>
+  <div align="center">
+    <img src="./assets/states.jpg" alt="States" width="300" />
+  </div>
+</details>
