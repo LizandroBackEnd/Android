@@ -22,3 +22,12 @@
     <img src="./assets/states.jpg" alt="States" width="300" />
   </div>
 </details>
+
+## <a href="#greeting">2. Greeting</a>
+
+<details id="greeting">
+  <summary>Haz clic para ver la imagen</summary>
+  <div align="center">
+    <img src="./assets/greeting.jpg" alt="States" width="300" />
+  </div>
+</details>
