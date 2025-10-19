@@ -31,3 +31,13 @@
     <img src="./assets/greeting.jpg" alt="States" width="300" />
   </div>
 </details>
+
+## <a href="#division">3. Division</a>
+
+<details id="division">
+  <summary>Haz clic para ver la imagen</summary>
+  <div align="center">
+    <img src="./assets/division.jpeg" alt="States" width="300" />
+  </div>
+</details>
+
