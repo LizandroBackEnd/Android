@@ -136,7 +136,7 @@ fun LayoutConstraintLayout() {
             end.linkTo(parent.end)
 
         })
-        
+
     }
 
 
