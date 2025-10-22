@@ -25,6 +25,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -54,11 +55,11 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Division () {
-    var a by remember { mutableStateOf("") }
-    var b by remember { mutableStateOf("") }
+    var a by rememberSaveable { mutableStateOf("") }
+    var b by rememberSaveable { mutableStateOf("") }
     var context = LocalContext.current
     var focusManager = LocalFocusManager.current
-    var resultado by remember { mutableStateOf("") }
+    var resultado by rememberSaveable { mutableStateOf("") }
 
 
     Column (
