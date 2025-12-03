@@ -4,6 +4,7 @@ import android.widget.Toast
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -56,7 +57,9 @@ fun SellView(navController: NavController, id: Int?, nombre: String?, articuloVi
                 Toast.makeText(context, "Venta realizada de ${cantidad.toInt()} unidades de $nombre", Toast.LENGTH_SHORT).show()
                 navController.navigate(Screen.Stock.route + "?filter=")
             }
-        }) {
+        },
+            modifier = Modifier.fillMaxWidth()
+        ) {
             Text("Confirmar Venta")
         }
     }

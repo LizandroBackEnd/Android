@@ -4,6 +4,7 @@ import android.widget.Toast
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
@@ -33,7 +34,9 @@ fun DetailView(navController: NavController, id: Int?, nombre: String?) {
             } else {
                 navController.navigate("${Screen.Sell.route}?id=$id&nombre=$nombre")
             }
-        }) {
+        },
+            modifier = Modifier.fillMaxWidth()
+        ) {
             Text("Vender")
         }
 
@@ -45,8 +48,23 @@ fun DetailView(navController: NavController, id: Int?, nombre: String?) {
             } else {
                 navController.navigate("${Screen.Delete.route}?id=$id&nombre=$nombre")
             }
-        }) {
+        },
+            modifier = Modifier.fillMaxWidth()
+        ) {
             Text("Eliminar")
+        }
+
+        Button(
+            onClick = {
+                if (id == null) {
+                    Toast.makeText(context, "No se puede actualizar: datos incompletos", Toast.LENGTH_SHORT).show()
+                } else {
+                    navController.navigate("${Screen.Update.route}?id=$id")
+                }
+            },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Actualizar")
         }
     }
 }
